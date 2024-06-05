@@ -60,7 +60,7 @@ const ServiceButton = () => {
 
 const Footer = () => {
   return (
-    <div class="flex max-w-[980px] px-[4%] mx-auto my-5 flex-col gap-6 text-[#808080]">
+    <div class="flex max-w-[980px] px-[4%] mx-auto my-5 flex-col gap-6 text-[#808080] mt-24">
       <SocialMedia />
       <FooterLinks />
       <ServiceButton />
