@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.header-list{
+  @apply ml-5 cursor-pointer hover:opacity-80 hover:transition-all hover:duration-75
+}
