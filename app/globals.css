@@ -48,3 +48,6 @@ body {
 
 } 
 
+.movie-container a {
+  transition: transform .3s;  
+}
