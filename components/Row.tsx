@@ -1,8 +1,7 @@
 'use client'
-import Swiper from 'swiper';
 import Movie from './Movie';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import { Pagination } from 'swiper/modules';
+
 
 interface RowProps {
   title: string;
@@ -39,19 +38,9 @@ const Row: React.FC<RowProps> = ({ title, images, rowID }) => {
           id={'slider' + rowID}
           className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth hide-scrollbar relative'
         >
-          {/* <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            classNameName="mySwiper"
-          > */}
           {images.map((image) => (
-            <Movie src={image} />
+            <Movie src={image.img} id={image.id} />
           ))}
-          {/* </Swiper> */}
         </div>
         <MdChevronRight
           onClick={slideRight}
