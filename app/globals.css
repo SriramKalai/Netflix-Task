@@ -48,6 +48,12 @@ body {
 
 } 
 
-.movie-container a {
+.movie-container{
   transition: transform .3s;  
+}
+
+.movie-container:hover {
+  transform: scale(1.4);
+  position: relative;
+  border-radius: .4rem;
 }

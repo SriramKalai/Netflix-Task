@@ -37,7 +37,7 @@ const Row: React.FC<RowProps> = ({ title, images, rowID }) => {
         />
         <div
           id={'slider' + rowID}
-          className='movie-container w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth hide-scrollbar relative'
+          className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth hide-scrollbar relative'
         >
           {/* <Swiper
             slidesPerView={3}

@@ -6,7 +6,7 @@ interface MovieProps {
 
 const Movie: React.FC<MovieProps> = ({ src }) => {
   return (
-    <a className='w-[160px] md:w-[220px] inline-block cursor-pointer py-2 px-1'>
+    <a className='movie-container w-[160px] md:w-[220px] inline-block cursor-pointer py-2 px-1'>
       <img
         className='w-full h-auto block'
         src={src}
